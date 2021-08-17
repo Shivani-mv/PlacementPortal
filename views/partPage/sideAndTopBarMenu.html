@@ -1,0 +1,348 @@
+<head>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.new_sb{
+   background: #000000; 
+}
+.sidebar-footer a:hover {
+    background: #000000;
+}
+.sidebar-footer {
+    bottom: 0px;
+    clear: both;
+    display: block;
+    padding: 0 0 0 0;
+    position: fixed;
+    width: 230px;
+    background: #000000;
+
+}
+.sidebar-footer a {
+    padding: 7px 0 3px;
+    text-align: center;
+    width: 25%;
+    font-size: 17px;
+    display: block;
+    float: left;
+    background: #000000;
+    cursor: pointer;
+}
+.sb_icon{
+  height: 25px;
+  width: 15px;
+  float: left;
+}
+.abc {
+  position: relative;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 0px;
+  left: 0px;
+  color:white;
+  font-family: 'Montserrat';
+}
+
+.nav.side-menu1>li.active>a {
+    color:#000000;
+    background: #DCDCDC;
+    font-family: 'Montserrat';
+    opacity:0.9;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0, inset rgba(255, 255, 255, 0.16) 0 1px 0
+}
+
+.nav.side-menu1>li>a,
+.nav.child_menu1>li>a {
+    color: #fff;
+    font-weight: 500
+    font-family: 'Montserrat';
+}
+
+.nav-sm .nav.side-menu1 li a i {
+    font-size: 25px !important;
+    text-align: center;
+    width: 100% !important;
+    margin-bottom: 5px
+    font-family: 'Montserrat';
+}
+.nav-sm .nav.child_menu1 li.active,
+.nav-sm .nav.side-menu1 li.active-sm {
+    border-right: 5px solid #1ABB9C
+}
+.nav-sm ul.nav.child_menu1 ul,
+.nav-sm .nav.side-menu1 li.active-sm ul ul {
+    position: static;
+    width: 200px;
+    background: none
+}
+.nav.child_menu1>li>a {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 12px;
+    padding: 9px
+}
+
+.nav.child_menu1 {
+    display: none
+}
+.nav.child_menu1 li:hover,
+.nav.child_menu1 li.active {
+    background-color: rgba(255, 255, 255, 0.06)
+}
+
+.nav.child_menu1 li {
+    padding-left: 36px
+}
+.nav-md ul.nav.child_menu1 li:before {
+    background: #425668;
+    bottom: auto;
+    content: "";
+    height: 8px;
+    left: 23px;
+    margin-top: 15px;
+    position: absolute;
+    right: auto;
+    width: 8px;
+    z-index: 1;
+    border-radius: 50%
+}
+.nav-md ul.nav.child_menu1 li:after {
+    border-left: 1px solid #425668;
+    bottom: 0;
+    content: "";
+    left: 27px;
+    position: absolute;
+    top: 0
+}
+.nav-md ul.nav.child_menu1 li:last-child::after {
+  bottom: 50%;
+}
+.nav.side-menu1>li>a,
+.nav.child_menu1>li>a {
+    color: #E7E7E7;
+    font-weight: 500
+}
+.nav.child_menu1 li li:hover,
+.nav.child_menu1 li li.active {
+    background: none
+}
+.nav.child_menu1 li li a:hover,
+.nav.child_menu1 li li a.active {
+    color: #fff
+}
+.new_font{
+   font-family: 'Montserrat';
+   font-size: 14px;
+}
+.new_font1{
+   font-family: 'Montserrat';
+   font-size: 25px;
+   colour: white;
+}
+.new_font_timer {
+   color: white;
+   font-size: 20px;
+   font-family: 'Montserrat';
+   position: relative;
+   left: 20px;
+}
+</style>
+</head>
+<div class="new_sb">
+  <div class="col-md-3 left_col">
+    <div class="new_sb">
+      <div class="left_col scroll-view">
+        <div class ="new_sb" style="border: 0;">
+            <a href="../admin/dashboard.php" class="site_title"><i class="fa fa-paw"></i> <span class="new_font1">Meow Group</span></a>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+        <!-- menu profile quick info -->
+
+        <div class="profile clearfix">
+          <div class="profile_pic">
+            <img src="../../resource/images/img.png" alt="..." class="img-circle profile_img">
+          </div>
+          <div class="new_sb">
+            <div class="profile_info">
+                <span class="new_font1">Welcome,</span>
+                <h2 class="new_font1">Meow Group !</h2>
+            </div>
+          </div>
+        </div>
+        <!-- /menu profile quick info -->
+
+        <br />
+
+        <!-- sidebar menu -->
+        <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div class="menu_section">
+                <ul class="nav side-menu1">
+                        <li><a class="new_font" href="../admin/dashboard.php"><i class="fa fa-home"></i>Dashboard</a></li>
+                         <!--<li><a class="new_font" href="../admin/dashboard2.php">Dashboard2</a></li>-->
+                         <!--<li><a class="new_font" href="../admin/dashboard3.php">Dashboard3</a></li>-->
+                    <li>
+                    <li><a class="new_font" href="../StudentProfile/Profile.php"><i class="fa fa-user"></i>Profile</a></li>     
+		    <li>
+                        <a><div class="new_font"><i class="fa fa-book"></i>Placement Training<span class="fa fa-chevron-down"></span></div></a>
+                        <ul class="nav child_menu1">
+                            <li><a class="new_font" href="../placement_training/coding.php">Coding</a></li>
+                            <li><a class="new_font" href="../admin/upcoming_tests.php">Upcoming Tests</a></li>
+                        </ul>
+                    </li>    
+                    <li>
+			    <a><div class="new_font"><i class="fa fa-pencil"></i>Aptitude<span class="fa fa-chevron-down"></span></div></a>
+                        <ul class="nav child_menu1">
+                                 <li><a class="new_font" href="../placement_training/qa.php">Quantitative Aptitude</a></li>
+                                 <li><a class="new_font" href="../placement_training/lr.php">Logical Reasoning</a></li>
+                                 <li><a class="new_font" href="../placement_training/va.php">Verbal Ability</a></li>
+                                 <li><a class="new_font" href="../placement_training/tech.php">Technical Aptitude</a></li>
+                         </ul>                
+                    </li>
+                    <li>
+                        <a><div class="new_font"><i class="fa fa-edit"></i>Create Event<span class="fa fa-chevron-down"></span></div></a>
+                        <ul class="nav child_menu1">
+                           <li><a class="new_font" href="../admin/create_offline_event.php">Create Offline Events</a></li>
+                           <li><a class="new_font" href="../admin/create_online_event.php">Create Online Events</a></li>
+			  
+                        </ul>
+                    </li>                    
+
+		    <li>
+                        <a><div class="new_font"><i class="fa fa-calendar"></i>Placement Activities <span class="fa fa-chevron-down"></span></div></a>
+                        <ul class="nav child_menu1">
+                            <li><a class="new_font" href="../admin/offline_events.php">Offline Events</a></li>
+                            <li><a class="new_font" href="../admin/online_events.php">Online Events</a></li>
+                        </ul>
+                    </li>
+
+                            <li><a class="new_font" href="../CampusDrive/Campus_drive.php"><i class="fa fa-building"></i>Campus Drive</a></li>
+                        <li><a class="new_font" href="../admin/Alumni.php"><i class="fa fa-graduation-cap"></i> Alumni</a></li>
+                        <br><br>                        
+                            <li><a class="new_font" href="../noticeBoard/noticeBoard.php"><i class="fa fa-clipboard"></i>Notice Board</a></li>
+
+<li><a class="new_font" href="../noticeBoard/contact.php"><i class="fa fa-phone"></i>Contact Us</a></li>
+
+               </div>
+           </div>                        
+          
+<br><br>
+<p class="new_font_timer">Upcoming Test In:</p>
+<p class="abc" id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Nov 30, 2020 10:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "D " + hours + "H "
+  + minutes + "M " + seconds + "S ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+     
+        <!-- /sidebar menu -->
+
+<!-- /menu footer buttons -->
+        <div class="sidebar-footer hidden-small">
+            <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="Logout" href="../../src/store/Logout.php">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+            </a>
+        </div>
+<!-- /menu footer buttons -->
+    </div>
+</div>
+
+
+
+<!-- top navigation -->
+
+<div class="top_nav">
+    <div class="nav_menu">
+        <nav>
+            <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                    <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-paw"></i> Meow Group
+                        <span class=" fa fa-angle-down"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-usermenu pull-right">
+                        <li><a href="../../views/StudentProfile/Profile.php"> Profile</a></li>
+                        <li><a href="../../src/store/Logout.php"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                    </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                    <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-calendar"></i>
+                        <span class="badge bg-green"><?=$_SESSION["event"]?></span>
+                    </a>
+                    <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+
+                        <?php
+                           foreach ($_SESSION["events"] as $event){
+                        ?>
+                        <li>
+                            <a>
+                                <span class="image"><img src="../../resource/images/img.png" alt="Profile Image" /></span>
+                                <span>
+                                  <span class="time"><?=$event['event_time1']?></span>
+                                </span>
+                                <span class="message">
+                                  <?=$event['event_name1']?>
+                               </span>
+                            </a>
+                        </li>
+                        <?php
+                           }
+                        ?>
+                        <li>
+                            <div class="text-center">
+                                <a href="../../views/admin/online_events.php">
+                                    <strong>See All Alerts</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<!-- /top navigation -->
